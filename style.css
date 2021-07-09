@@ -1,0 +1,40 @@
+
+.library-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.book-card {
+    height: auto;
+    width: 300px;
+    margin: 15px;
+    padding: 10px;
+    background-color: coral;
+    border-radius: 10%;
+    position: relative;
+    box-shadow: 10px 5px 5px black;
+}
+
+.book-card > div {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 15px 0px 10px 0px;
+    /*border: dashed red;*/
+}
+
+.book-card > span {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor:pointer;
+}
+
+.book-title {
+    border-bottom: solid black 1px;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+}
+
