@@ -22,9 +22,6 @@ function displayBooks (library) {
     }
 }
 
-var LoTR = new Book("The Fellowship of the Ring", "J.R.R. Tolkien", 595, true);
-var HP = new Book("Harry Potter and the Chamber of Secrets", "J.K. Rowling", 300, false);
-
 const libraryContainer = document.querySelector('.library-container');
 
 function createCard(book){
@@ -53,6 +50,9 @@ function createCard(book){
 
     libraryContainer.appendChild(newCard);
 }
+
+var LoTR = new Book("The Fellowship of the Ring", "J.R.R. Tolkien", 595, true);
+var HP = new Book("Harry Potter and the Chamber of Secrets", "J.K. Rowling", 300, false);
 
 addBookToLibrary(LoTR, myLibrary);
 addBookToLibrary(HP, myLibrary);
