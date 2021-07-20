@@ -17,14 +17,16 @@ function addBookToLibrary (book, library) {
 }
 
 function displayBooks (library) {
+    let i = 0
     for(let book of library) {
-        createCard(book);
+        createCard(book, i);
+        i++
     }
 }
 
 const libraryContainer = document.querySelector('.library-container');
 
-function createCard(book){
+function createCard(book, i){
     var newCard = document.createElement('div');
     newCard.classList.add('book-card');
 
@@ -47,6 +49,8 @@ function createCard(book){
     readDiv.classList.add('book-read');
     readDiv.innerHTML = book.read ? 'This book has been read' : 'This book has not been read';
     newCard.appendChild(readDiv);
+
+    newCard.dataset.index = i;
 
     libraryContainer.appendChild(newCard);
 }

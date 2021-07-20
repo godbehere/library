@@ -1,4 +1,12 @@
 
+html { 
+    background: url(images/chalkboard.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 .library-container {
     display: flex;
     flex-direction: row;
@@ -11,7 +19,8 @@
     width: 300px;
     margin: 15px;
     padding: 10px;
-    background-color: coral;
+    background-color: rgb(203, 255, 80);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 10%;
     position: relative;
     box-shadow: 10px 5px 5px black;
