@@ -14,12 +14,32 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
 
-	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
+	<header><h1>Private Library</h1><button id='add-new-book'>Add New Book</button></header>
 	<div class='library-container'>
 		
+	</div>
+	<div class='adding-form'>
+		<form class='book-form' onsubmit='addBookForm(this);return false'>
+			<label>Title</label>
+				<input type='text' name='title' id='title' required>
+			<label>Author</label>
+				<input type='text' name='author' id='author' required>
+			<label>Pages</label>
+				<input type='text' name='pages' id='pages' required>
+			<label>Read?</label>
+			<label class="switch">
+				<input type="checkbox" name='read' id='read' checked>
+				<span class="slider round"></span>
+			</label>
+			<input id='cancel-form' type='reset' value='Cancel'>
+			<input id='submit-button' type='submit' value='Add Book'>
+		</form>
 	</div>
 	<script src="script.js"></script> 
 </body>
